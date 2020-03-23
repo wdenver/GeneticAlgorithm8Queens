@@ -60,7 +60,7 @@ int tabFim;
 
 Genetico(){
     nPopulacao =NPOPULACAO;
-    fatorMutacao = 2;
+    fatorMutacao = 1;
     Velocidade = 10;
     altomatico = false;
     acabou = false;
@@ -538,7 +538,7 @@ void DesenhaTela(){
   glPushMatrix ();
   glTranslatef(0.0,0,0);
   glRasterPos2f(0, 0);
-                char* p = (char*) "Aperte a tecla LEFT para no iteracao ou as telacas Up(+) ou Down(-) para controlar a velocidade de iteracao ";
+                char* p = (char*) "Aperte a tecla RIGHT para no iteracao ou as telacas Up(+) ou Down(-) para controlar a velocidade de iteracao ";
                 while (*p != '\0') {
                 glutBitmapCharacter(GLUT_BITMAP_HELVETICA_12,*p++);
                 }  
